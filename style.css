@@ -280,7 +280,7 @@ h2 {
 
     .btn-playstore:hover {
         transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(52, 168, 83, 0.4);
+        box-shadow: 0 6px 15px rgba(52, 168, 83, 0.4);
     }
 
 /* App Store Button */
@@ -290,7 +290,7 @@ h2 {
 
     .btn-appstore:hover {
         transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(10, 132, 255, 0.4);
+        box-shadow: 0 6px 15px rgba(10, 132, 255, 0.4);
     }
 
 /* ---------------------- */
