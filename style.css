@@ -276,14 +276,14 @@ h2 {
     }
 
 /* Button Icons */
-.store-button img {
+.project-buttons img {
     width: 18px; /* slightly bigger icon */
     height: 18px;
     display: inline-block;
     vertical-align: middle;
 }
 
-.store-button span {
+.project-buttons span {
     margin-left: 6px;
     display: inline-block;
 }
