@@ -258,18 +258,16 @@ h2 {
     /* ---------------------- */
     .project-landscape .store-button,
     .project-portrait .store-button {
-        width: 100px; /* Reduced width */
-        justify-content: center;
-        text-align: center;
-        padding: 8px 0; /* Reduced padding */
-        display: inline-flex;
-        align-items: center;
-        gap: 5px; /* spacing between icon/text */
-        border-radius: 8px;
+        display: inline-block;
+        width: auto; /* auto width based on content */
+        min-width: 80px; /* ensure minimum size */
+        padding: 6px 12px; /* compact padding */
+        font-size: 0.8rem; /* smaller text */
         font-weight: 500;
-        font-size: 0.85rem; /* slightly smaller text */
+        text-align: center;
         color: white;
         text-decoration: none;
+        border-radius: 6px;
         transition: all 0.3s ease;
     }
 
@@ -280,7 +278,7 @@ h2 {
 
     .btn-playstore:hover {
         transform: scale(1.05);
-        box-shadow: 0 6px 15px rgba(52, 168, 83, 0.4);
+        box-shadow: 0 4px 12px rgba(52, 168, 83, 0.4);
     }
 
 /* App Store Button */
@@ -290,7 +288,7 @@ h2 {
 
     .btn-appstore:hover {
         transform: scale(1.05);
-        box-shadow: 0 6px 15px rgba(10, 132, 255, 0.4);
+        box-shadow: 0 4px 12px rgba(10, 132, 255, 0.4);
     }
 
 /* ---------------------- */
