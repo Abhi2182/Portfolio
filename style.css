@@ -125,7 +125,7 @@ h2 {
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 40px;
     margin: 50px auto;
     width: 90%;
