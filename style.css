@@ -258,16 +258,16 @@ h2 {
     /* ---------------------- */
     .project-landscape .store-button,
     .project-portrait .store-button {
-        width: 130px; /* Fixed width */
-        justify-content: center; /* Center text/icons */
+        width: 100px; /* Reduced width */
+        justify-content: center;
         text-align: center;
-        padding: 10px 0;
+        padding: 8px 0; /* Reduced padding */
         display: inline-flex;
         align-items: center;
-        gap: 6px; /* spacing between icon/text */
-        border-radius: 10px;
-        font-weight: 600;
-        font-size: 0.9rem;
+        gap: 5px; /* spacing between icon/text */
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 0.85rem; /* slightly smaller text */
         color: white;
         text-decoration: none;
         transition: all 0.3s ease;
