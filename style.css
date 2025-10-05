@@ -271,8 +271,8 @@ h2 {
 
     /* Icon inside button */
     .btn img {
-        width: 20px; 
-        height: 20px;
+        width: 30px; 
+        height: 30px;
         display: inline-block;
         vertical-align: middle;
     }
