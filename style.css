@@ -119,19 +119,10 @@ h2 {
             box-shadow: 0 8px 20px rgba(0, 119, 255, 0.5);
         }
 
-/* ---------------------- */
-/* Projects Section       */
-/* ---------------------- */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 40px;
-    margin: 50px auto;
-    width: 90%;
-}
 
-/* Project NFT Duel Card */
-.project-nftduel {
+
+/* Project Landscape Card */
+.project-landscape {
     background: #ffffff;
     border-radius: 16px;
     overflow: hidden;
@@ -142,88 +133,173 @@ h2 {
     cursor: pointer;
 }
 
-    .project-nftduel:hover {
+    .project-landscape:hover {
         transform: translateY(-8px);
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
     }
 
-    /* Project Thumbnail */
-    .project-nftduel .project-thumbnail {
+    /* Landscape Thumbnail */
+    .project-landscape .project-thumbnail {
         width: 100%;
-        height: 220px;
+        height: 200px;
         object-fit: contain;
         object-position: center;
-        background-color: #f4f6f8; /* soft gray background behind transparent areas */
+        background-color: #f4f6f8;
         border-radius: 10px;
-        padding: 10px; /* gives breathing room around image */
+        padding: 10px;
         box-sizing: border-box;
     }
 
-    /* Project Content */
-    .project-nftduel .project-content {
+    /* Landscape Content */
+    .project-landscape .project-content {
         padding: 20px 25px;
     }
 
-        .project-nftduel .project-content h3 {
+        .project-landscape .project-content h3 {
             color: #0077ff;
             margin-bottom: 10px;
             font-size: 1.3rem;
         }
 
-        .project-nftduel .project-content p {
+        .project-landscape .project-content p {
             color: #555;
             font-size: 0.95rem;
             margin-bottom: 20px;
         }
 
-    /* ---------------------- */
-    /* Store Buttons          */
-    /* ---------------------- */
-    .project-nftduel .project-buttons {
+    /* Landscape Buttons */
+    .project-landscape .project-buttons {
         display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 10px;
         flex-wrap: wrap;
     }
 
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 10px 16px;
-    border-radius: 12px;
-    font-weight: 600;
-    color: white;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-    .btn img {
-        width: 20px;
-        height: 20px;
+    .project-landscape .store-button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 16px;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
     }
 
-/* Play Store */
-.btn-playstore {
-    background: linear-gradient(135deg, #34a853, #2e7d32);
-}
-
-    .btn-playstore:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(52, 168, 83, 0.4);
+    .project-landscape .btn-playstore {
+        background: linear-gradient(135deg, #34a853, #2e7d32);
     }
 
-/* App Store */
-.btn-appstore {
-    background: linear-gradient(135deg, #0a84ff, #0051d4);
+        .project-landscape .btn-playstore:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(52, 168, 83, 0.4);
+        }
+
+    .project-landscape .btn-appstore {
+        background: linear-gradient(135deg, #0a84ff, #0051d4);
+    }
+
+        .project-landscape .btn-appstore:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(10, 132, 255, 0.4);
+        }
+
+/* ---------------------- */
+/* Portrait Projects      */
+/* ---------------------- */
+.project-portrait {
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    gap: 20px;
 }
 
-    .btn-appstore:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(10, 132, 255, 0.4);
+    .project-portrait:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
     }
+
+    /* Portrait Thumbnail */
+    .project-portrait .project-thumbnail {
+        width: 180px;
+        height: 280px;
+        object-fit: contain;
+        object-position: center;
+        background-color: #f4f6f8;
+        border-radius: 12px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Portrait Content */
+    .project-portrait .project-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        padding: 20px 15px;
+    }
+
+        .project-portrait .project-content h3 {
+            color: #0077ff;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .project-portrait .project-content p {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+    /* Portrait Buttons */
+    .project-portrait .project-buttons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .project-portrait .store-button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .project-portrait .btn-playstore {
+        background: linear-gradient(135deg, #34a853, #2e7d32);
+    }
+
+        .project-portrait .btn-playstore:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(52, 168, 83, 0.4);
+        }
+
+    .project-portrait .btn-appstore {
+        background: linear-gradient(135deg, #0a84ff, #0051d4);
+    }
+
+        .project-portrait .btn-appstore:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(10, 132, 255, 0.4);
+        }
 
 /* ---------------------- */
 /* Contact Section        */
@@ -266,9 +342,23 @@ footer {
         font-size: 2.2rem;
     }
 
-    .project-nftduel .project-thumbnail {
+    .project-landscape .project-thumbnail {
         height: 180px;
     }
+
+    .project-portrait {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+        .project-portrait .project-thumbnail {
+            width: 100%;
+            height: 220px;
+        }
+
+        .project-portrait .project-content {
+            padding: 15px;
+        }
 
     #about,
     #contact {
