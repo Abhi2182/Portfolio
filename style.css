@@ -120,16 +120,30 @@ h2 {
         }
 
 /* ---------------------- */
-/* Landscape Projects     */
+/* Projects Section Grid  */
 /* ---------------------- */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 40px;
     margin: 50px auto;
     width: 90%;
 }
 
+/* ---------------------- */
+/* Fixed Width Project Box */
+/* ---------------------- */
+.project-landscape,
+.project-portrait {
+    width: 360px; /* Fixed width */
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* ---------------------- */
+/* Landscape Projects     */
+/* ---------------------- */
 .project-landscape {
     background: #ffffff;
     border-radius: 16px;
@@ -180,37 +194,6 @@ h2 {
         flex-wrap: wrap;
     }
 
-    .project-landscape .store-button {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 10px 16px;
-        border-radius: 12px;
-        font-weight: 600;
-        font-size: 0.9rem;
-        color: white;
-        text-decoration: none;
-        transition: all 0.3s ease;
-    }
-
-    .project-landscape .btn-playstore {
-        background: linear-gradient(135deg, #34a853, #2e7d32);
-    }
-
-        .project-landscape .btn-playstore:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(52, 168, 83, 0.4);
-        }
-
-    .project-landscape .btn-appstore {
-        background: linear-gradient(135deg, #0a84ff, #0051d4);
-    }
-
-        .project-landscape .btn-appstore:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(10, 132, 255, 0.4);
-        }
-
 /* ---------------------- */
 /* Portrait Projects      */
 /* ---------------------- */
@@ -232,8 +215,8 @@ h2 {
     }
 
     .project-portrait .project-thumbnail {
-        width: 180px;
-        height: 280px;
+        width: 140px;
+        height: 220px;
         object-fit: contain;
         object-position: center;
         background-color: #f4f6f8;
@@ -270,12 +253,19 @@ h2 {
         flex-wrap: wrap;
     }
 
+    /* ---------------------- */
+    /* Buttons Fixed Width    */
+    /* ---------------------- */
+    .project-landscape .store-button,
     .project-portrait .store-button {
-        display: flex;
+        width: 130px; /* Fixed width */
+        justify-content: center; /* Center text/icons */
+        text-align: center;
+        padding: 10px 0;
+        display: inline-flex;
         align-items: center;
-        gap: 8px;
-        padding: 8px 14px;
-        border-radius: 8px;
+        gap: 6px; /* spacing between icon/text */
+        border-radius: 10px;
         font-weight: 600;
         font-size: 0.9rem;
         color: white;
@@ -283,23 +273,25 @@ h2 {
         transition: all 0.3s ease;
     }
 
-    .project-portrait .btn-playstore {
-        background: linear-gradient(135deg, #34a853, #2e7d32);
+/* Play Store Button */
+.btn-playstore {
+    background: linear-gradient(135deg, #34a853, #2e7d32);
+}
+
+    .btn-playstore:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(52, 168, 83, 0.4);
     }
 
-        .project-portrait .btn-playstore:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(52, 168, 83, 0.4);
-        }
+/* App Store Button */
+.btn-appstore {
+    background: linear-gradient(135deg, #0a84ff, #0051d4);
+}
 
-    .project-portrait .btn-appstore {
-        background: linear-gradient(135deg, #0a84ff, #0051d4);
+    .btn-appstore:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(10, 132, 255, 0.4);
     }
-
-        .project-portrait .btn-appstore:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(10, 132, 255, 0.4);
-        }
 
 /* ---------------------- */
 /* Contact Section        */
