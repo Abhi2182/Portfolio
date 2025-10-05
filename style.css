@@ -256,8 +256,8 @@ h2 {
     /* ---------------------- */
     /* Store Buttons          */
     /* ---------------------- */
-    .project-landscape .store-button,
-    .project-portrait .store-button {
+    .project-landscape .project-buttons,
+    .project-portrait .project-buttons {
         display: inline-flex;
         align-items: center;
         justify-content: center;
