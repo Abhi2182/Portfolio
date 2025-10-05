@@ -249,10 +249,10 @@ h2 {
         }
 
     /* Store Buttons */
-    .project-portrait .store-buttons {
+    .project-portrait .project-buttons {
         display: flex;
-        gap: 12px;
-        margin-top: 8px;
+        gap: 8px;
+        flex-wrap: wrap;
     }
 
 /* ---------------------- */
