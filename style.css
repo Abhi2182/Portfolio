@@ -142,7 +142,7 @@ h2 {
 }
 
 /* ---------------------- */
-/* Landscape Projects     */
+/* Landscape Projects Layout */
 /* ---------------------- */
 .project-landscape {
     background: #ffffff;
@@ -194,61 +194,65 @@ h2 {
     }
 
 /* ---------------------- */
-/* Portrait Projects      */
+/* Portrait Project Layout */
 /* ---------------------- */
 .project-portrait {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
     background: #ffffff;
     border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    gap: 20px;
 }
 
     .project-portrait:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        transform: translateY(-6px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     }
 
-    .project-portrait .project-thumbnail {
-        width: 140px;
-        height: 220px;
-        object-fit: contain;
-        object-position: center;
-        background-color: #f4f6f8;
+    /* Thumbnail image */
+    .project-portrait img {
+        width: 240px;
+        height: auto;
         border-radius: 12px;
+        object-fit: contain;
+        background: #f9f9f9;
         padding: 10px;
-        box-sizing: border-box;
+        margin-right: 24px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
 
+    /* Text Content */
     .project-portrait .project-content {
+        flex: 1;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        flex: 1;
-        padding: 20px 15px;
+        justify-content: center;
     }
 
         .project-portrait .project-content h3 {
-            color: #0077ff;
-            margin-bottom: 10px;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
+            color: #222;
+            margin-bottom: 8px;
         }
 
         .project-portrait .project-content p {
             color: #555;
-            font-size: 0.95rem;
-            margin-bottom: 15px;
             line-height: 1.5;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
         }
 
-    .project-portrait .project-buttons {
+    /* Store Buttons */
+    .project-portrait .store-buttons {
         display: flex;
-        gap: 8px;
-        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 8px;
     }
 
 /* ---------------------- */
