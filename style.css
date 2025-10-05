@@ -136,7 +136,7 @@ h2 {
 /* ---------------------- */
 .project-landscape,
 .project-portrait {
-    width: 500px;
+    width: 450px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -189,6 +189,7 @@ h2 {
 
     .project-landscape .project-buttons {
         display: flex;
+        justify-content: flex-start;
         gap: 8px;
         flex-wrap: wrap;
     }
@@ -247,9 +248,11 @@ h2 {
 
     .project-portrait .project-buttons {
         display: flex;
+        justify-content: flex-start;
         gap: 8px;
         flex-wrap: wrap;
     }
+
     /* ---------------------- */
     /* Store Buttons          */
     /* ---------------------- */
@@ -283,6 +286,7 @@ h2 {
     margin-left: 5px;
     display: inline-block;
 }
+
 /* Play Store Button */
 .btn-playstore {
     background: linear-gradient(135deg, #34a853, #2e7d32);
