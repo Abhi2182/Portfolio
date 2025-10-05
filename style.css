@@ -100,7 +100,7 @@ h3 {
 }
 
 /* Project Card */
-.project-card {
+.project-nftduel {
     background-color: #1f1f1f;
     border-radius: 12px;
     overflow: hidden;
@@ -109,7 +109,7 @@ h3 {
     flex-direction: column;
 }
 
-    .project-card:hover {
+    .project-nftduel:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     }
