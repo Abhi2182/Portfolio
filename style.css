@@ -3,80 +3,92 @@
 /* ---------------------- */
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
-    color: #222;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(180deg, #fdfdfd, #f4f8ff);
+    color: #1a1a1a;
     line-height: 1.7;
+    overflow-x: hidden;
 }
 
 a {
-    color: #0078ff;
+    color: #0077ff;
     text-decoration: none;
+    transition: 0.3s;
 }
 
     a:hover {
-        text-decoration: underline;
+        color: #0059c9;
     }
-
-.container {
-    width: 85%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 0;
-}
-
-section {
-    padding: 60px 0;
-}
 
 /* ---------------------- */
 /* Header                 */
 /* ---------------------- */
 header {
-    background: linear-gradient(135deg, #0078ff, #00bcd4);
+    background: linear-gradient(135deg, #0077ff, #00bcd4);
     color: white;
     text-align: center;
-    padding: 80px 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 100px 20px 80px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 
     header h1 {
-        font-size: 2.8rem;
-        margin-bottom: 10px;
+        font-size: 3rem;
+        margin-bottom: 15px;
+        font-weight: 700;
+        letter-spacing: 1px;
     }
 
     header p {
         font-size: 1.2rem;
         opacity: 0.9;
+        max-width: 600px;
+        margin: 0 auto;
     }
 
 /* ---------------------- */
 /* Section Titles         */
 /* ---------------------- */
 h2 {
-    color: #0078ff;
-    margin-bottom: 20px;
-    font-size: 2rem;
     text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #0a58ca;
+    position: relative;
 }
 
-h3 {
-    color: #0078ff;
-    margin-bottom: 10px;
-}
+    h2::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 3px;
+        background: #0077ff;
+        margin: 10px auto 0 auto;
+        border-radius: 2px;
+    }
 
 /* ---------------------- */
 /* About Section          */
 /* ---------------------- */
 #about {
-    background: #f9f9f9;
-    border-radius: 12px;
-    padding: 40px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 50px 40px;
+    width: 80%;
+    margin: 50px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
 }
+
+    #about:hover {
+        transform: translateY(-5px);
+    }
 
     #about p {
         margin-bottom: 15px;
+        font-size: 1.05rem;
         color: #333;
     }
 
@@ -88,21 +100,23 @@ h3 {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
     justify-content: center;
 }
 
     .skills li {
-        background: #0078ff;
+        background: linear-gradient(135deg, #0077ff, #00bcd4);
         color: white;
-        padding: 8px 15px;
+        padding: 10px 18px;
         border-radius: 25px;
         font-weight: 500;
+        box-shadow: 0 5px 15px rgba(0, 119, 255, 0.3);
         transition: 0.3s;
     }
 
         .skills li:hover {
-            background: #005bb5;
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 119, 255, 0.5);
         }
 
 /* ---------------------- */
@@ -110,68 +124,76 @@ h3 {
 /* ---------------------- */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin: 50px auto;
+    width: 90%;
 }
 
-/* Project Card */
-.project-card {
-    background-color: #ffffff;
-    border-radius: 12px;
+/* Project NFT Duel Card */
+.project-nftduel {
+    background: #ffffff;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.4s ease;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
-    .project-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    .project-nftduel:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
     }
 
-/* Project Thumbnail */
-.project-thumbnail {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-/* Project Content */
-.project-content {
-    padding: 20px;
-}
-
-    .project-content h3 {
-        color: #0078ff;
-        margin-bottom: 10px;
+    /* Project Thumbnail */
+    .project-nftduel .project-thumbnail {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 1px solid #eee;
     }
 
-    .project-content p {
-        margin-bottom: 15px;
-        color: #444;
+    /* Project Content */
+    .project-nftduel .project-content {
+        padding: 20px 25px;
     }
 
-/* Buttons Container */
-.project-buttons {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
+        .project-nftduel .project-content h3 {
+            color: #0077ff;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
 
-/* ---------------------- */
-/* Play Store & App Store Buttons */
-/* ---------------------- */
+        .project-nftduel .project-content p {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+    /* ---------------------- */
+    /* Store Buttons          */
+    /* ---------------------- */
+    .project-nftduel .project-buttons {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
 .btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 10px 16px;
-    border-radius: 8px;
+    border-radius: 12px;
     font-weight: 600;
+    color: white;
     text-decoration: none;
-    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
     .btn img {
@@ -179,48 +201,43 @@ h3 {
         height: 20px;
     }
 
-/* Play Store Button */
+/* Play Store */
 .btn-playstore {
-    background-color: #34a853;
-    color: #fff;
-    box-shadow: 0 4px 10px rgba(52, 168, 83, 0.2);
+    background: linear-gradient(135deg, #34a853, #2e7d32);
 }
 
     .btn-playstore:hover {
         transform: scale(1.05);
-        box-shadow: 0 6px 15px rgba(52, 168, 83, 0.4);
+        box-shadow: 0 8px 20px rgba(52, 168, 83, 0.4);
     }
 
-/* App Store Button */
+/* App Store */
 .btn-appstore {
-    background-color: #0a84ff;
-    color: #fff;
-    box-shadow: 0 4px 10px rgba(10, 132, 255, 0.2);
+    background: linear-gradient(135deg, #0a84ff, #0051d4);
 }
 
     .btn-appstore:hover {
         transform: scale(1.05);
-        box-shadow: 0 6px 15px rgba(10, 132, 255, 0.4);
+        box-shadow: 0 8px 20px rgba(10, 132, 255, 0.4);
     }
 
 /* ---------------------- */
 /* Contact Section        */
 /* ---------------------- */
 #contact {
-    background: #f9f9f9;
-    border-radius: 12px;
-    padding: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 60px auto;
+    width: 80%;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
     #contact p {
-        margin-bottom: 10px;
-    }
-
-    #contact a {
-        color: #0078ff;
-        font-weight: 600;
+        font-size: 1rem;
+        color: #333;
+        margin: 8px 0;
     }
 
 /* ---------------------- */
@@ -228,45 +245,30 @@ h3 {
 /* ---------------------- */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #f1f1f1;
-    color: #555;
-    font-size: 0.9rem;
-    border-top: 1px solid #ddd;
+    padding: 25px;
+    background: #0077ff;
+    color: white;
+    font-size: 0.95rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    letter-spacing: 0.5px;
 }
 
 /* ---------------------- */
-/* Responsive Styles      */
+/* Responsive             */
 /* ---------------------- */
 @media (max-width: 768px) {
-    .project-card {
-        flex-direction: column;
+    header h1 {
+        font-size: 2.2rem;
     }
 
-    .project-thumbnail {
-        height: 150px;
-    }
-
-    .btn {
-        margin-bottom: 10px;
+    .project-nftduel .project-thumbnail {
+        height: 180px;
     }
 
     #about,
     #contact {
-        padding: 30px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-
-    h2 {
-        font-size: 1.6rem;
+        width: 90%;
+        padding: 35px 20px;
     }
 }
