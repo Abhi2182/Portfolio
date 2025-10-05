@@ -250,13 +250,14 @@ h2 {
         gap: 8px;
         flex-wrap: wrap;
     }
-
     /* ---------------------- */
-    /* Compact Buttons        */
+    /* Store Buttons          */
     /* ---------------------- */
-    /*.project-landscape .store-button,
+    .project-landscape .store-button,
     .project-portrait .store-button {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         width: auto;
         min-width: 70px;
         padding: 6px 12px;
@@ -266,9 +267,22 @@ h2 {
         color: white;
         text-decoration: none;
         border-radius: 6px;
+        gap: 5px;
         transition: all 0.3s ease;
-    }*/
+    }
 
+/* Button Icons */
+.store-button img {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.store-button span {
+    margin-left: 5px;
+    display: inline-block;
+}
 /* Play Store Button */
 .btn-playstore {
     background: linear-gradient(135deg, #34a853, #2e7d32);
