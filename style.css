@@ -150,9 +150,13 @@ h2 {
     /* Project Thumbnail */
     .project-nftduel .project-thumbnail {
         width: 100%;
-        aspect-ratio: 16 / 9;
-        object-fit: cover;
-        border-bottom: 1px solid #eee;
+        height: 220px;
+        object-fit: contain;
+        object-position: center;
+        background-color: #f4f6f8; /* soft gray background behind transparent areas */
+        border-radius: 10px;
+        padding: 10px; /* gives breathing room around image */
+        box-sizing: border-box;
     }
 
     /* Project Content */
