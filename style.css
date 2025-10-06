@@ -339,10 +339,10 @@ h2 {
     box-shadow: 0 4px 10px rgba(0, 136, 204, 0.3);
 }
 
-    .btn-telegram img {
+    /*.btn-telegram img {
         width: 20px;
         height: 20px;
-    }
+    }*/
 
     .btn-telegram:hover {
         transform: scale(1.05);
